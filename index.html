@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation Using HTML And CSS - Saabiresh</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+     <div class="container">
+         <img src="423-image.png">
+         <h1 id="current-time"></h1>
+         <div class="quotes">
+            <p>Today's Quotes</p>
+            <h2>Lost time is never found again.</h2>
+         </div>
+     </div>
+
+<script>
+let time = document.getElementById("current-time");
+
+
+setInterval(() =>{
+    let d = new Date();
+time.innerHTML = d.toLocaleTimeString();
+}, 1000)
+
+</script>
+</body>
+</html>
